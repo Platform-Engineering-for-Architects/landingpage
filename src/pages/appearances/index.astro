@@ -1,0 +1,85 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const posts = [
+  {
+    id: 'kubecon-eu-2025',
+    title: 'KubeCon + CloudNativeCon EU 2025',
+    excerpt: "Kicking of KubeCon with a talk on the Platform Engineering Day, follwed by three book signings.",
+    date: 'April 1, 2025',
+    category: 'Book Signing & Talks',
+    image: 'src/assets/signing-eu-25-meshcloud.jpg'
+  },
+  {
+    id: 'kubernetes-book-club',
+    title: 'Kubernetes Book Club',
+    excerpt: "10 weeks of deep dives into every single chapter of our book.",
+    date: 'March 15, 2025',
+    category: 'Pod-/Webcasts',
+    image: 'src/assets/book-club.webp'
+  },
+  {
+    id: 'platformers-community',
+    title: 'Live Stream: Platformers Community',
+    excerpt: "Chatting with Guy about our book 'Platform Engineering for Architects'.",
+    date: 'November 21, 2024',
+    category: 'Pod-/Webcasts',
+    image: 'src/assets/platformers.jpg'
+  },
+  {
+    id: 'kubecon-na-2024',
+    title: 'Booksigning at KubeCon NA 2024',
+    excerpt: "Freshly printed copies of our book 'Platform Engineering for Architects' were signed by the authors.",
+    date: 'November 10, 2024',
+    category: 'Book Signing',
+    image: 'src/assets/signing-na-24-dynatrace.jpeg'
+  }
+];
+
+const categories = [...new Set(posts.map(post => post.category))];
+---
+
+<Layout title="Appearances" description="Our latest updates, presentations and insights.">
+  <Header />
+  <main class="pt-24"> <!-- Added padding-top to prevent content from sliding under nav -->
+    <!-- Category Filter -->
+    <div class="container-custom py-8">
+      <div class="mb-8 text-center">
+        <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Latest Updates & News</h1>
+        <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          Our latest updates, presentations and insights.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {posts.map((post, index) => (
+          <div class="card border border-gray-200 dark:border-gray-700 overflow-hidden slide-up" style={'animation-delay: ' + (index * 100) + 'ms'}>
+            <a href={'/appearances/' + post.id} class="block">
+              <img 
+                src={post.image} 
+                alt={post.title}
+                class="w-full h-48 object-cover"
+                loading="lazy"
+              />
+            </a>
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <span class="text-sm font-medium text-primary-600 dark:text-primary-400">{post.category}</span>
+                <span class="mx-2 text-gray-300 dark:text-gray-600">•</span>
+                <span class="text-sm text-gray-500 dark:text-gray-400">{post.date}</span>
+              </div>
+              <a href={'/appearances/' + post.id} class="block mb-3">
+                <h2 class="text-xl font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors">{post.title}</h2>
+              </a>
+              <p class="text-gray-600 dark:text-gray-300 mb-6">{post.excerpt}</p>
+              </div>
+            </div>
+        ))}
+      </div>
+
+    </div>
+  </main>
+  <Footer />
+</Layout>
