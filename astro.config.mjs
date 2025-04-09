@@ -5,8 +5,7 @@ import alpinejs from '@astrojs/alpinejs';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astronaut.github.io',
-  base: '',
+  site: 'platform-engineering-for-architects.github.io',
   integrations: [
     tailwind(),
     alpinejs()
