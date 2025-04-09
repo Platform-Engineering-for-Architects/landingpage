@@ -1,0 +1,72 @@
+---
+const testimonials = [
+  {
+    content: "Overall, this book is a must-read for professionals involved in platform development or engineering leadership. Its blend of theoretical insights and practical guidance equips readers with the knowledge to build and maintain effective platforms that drive organizational success.",
+    author: "Alessandro",
+    position: "Technical Specialist Application Innovation & AI",
+    company: "Microsoft",
+    avatar: "https://www.amazon.com/avatar/default/amzn1.account.AHWHRO57IGQ33F3WDNQMTITV3DPQ"
+  },
+  {
+    content: "This book covers so many aspects of platform engineering and how to design your own solution. I love that it gives so much advice while showing different angles of platform engineering.",
+    author: "Guy",
+    position: "Solutions Architect",
+    company: "AWS",
+    avatar: "https://media.licdn.com/dms/image/v2/D4D03AQGYDCqD680U8w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1670593632138?e=1749686400&v=beta&t=Nvo8-dDV57WxCulbfj1HqdtGC1MQYqEaYiGWjpF4uM4"
+  },
+  {
+    content: "I definitely recommend the book to people interested in value-focussed abstractions. You should have a solid background on architecture and general software development practices to fully enjoy the whole book, while individual chapters are certainly also good for newcomers.",
+    author: "Constanze",
+    position: "Lecturer & Researcher",
+    company: "Technical University Vienna",
+    avatar: "https://media.licdn.com/dms/image/v2/D4D03AQF5LkQ4gItjxg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1703445992143?e=1749686400&v=beta&t=Hq7-UiYZsrSn_2SBoZA2ZKkylv5WgJMr8Syy9wiZtkA"
+  }
+];
+---
+
+<section id="testimonials" class="section">
+  <div class="container-custom">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+        Reviews
+      </span>
+      <h2 class="mb-6 text-gray-900 dark:text-white">What Our Readers Say</h2>
+      <p class="text-gray-600 dark:text-gray-300">
+        Don't just take our word for it. Here's what our readers have to say about the book.
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      {testimonials.map((testimonial, index) => (
+        <div 
+          class="card p-6 border border-gray-200 dark:border-gray-700 slide-up" 
+          style={`animation-delay: ${index * 150}ms`}
+        >
+          <div class="mb-6">
+            {[...Array(5)].map(() => (
+              <svg class="w-5 h-5 inline-block text-warning-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+            ))}
+          </div>
+          
+          <blockquote class="mb-6 text-gray-700 dark:text-gray-300 italic">"{testimonial.content}"</blockquote>
+          
+          <div class="flex items-center">
+            <img 
+              src={testimonial.avatar} 
+              alt={testimonial.author} 
+              class="w-12 h-12 rounded-full mr-4 object-cover"
+              loading="lazy"
+            />
+            <div>
+              <p class="font-semibold text-gray-900 dark:text-white">{testimonial.author}</p>
+              <p class="text-sm text-gray-500 dark:text-gray-400">{testimonial.position}, {testimonial.company}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

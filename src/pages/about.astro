@@ -1,0 +1,171 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="About the Authors">
+  <Header />
+  <main class="pt-24"> <!-- Added padding-top to prevent content from sliding under nav -->
+    <div class="mb-24">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Meet the Authors</h2>
+        <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          Our diverse and rich background is what our book is made of.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="text-center">
+          <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
+            <img src="src/assets/hilliary.jpg" alt="Hilliary Lipsig" class="w-full h-full object-cover" />
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Hilliary Lipsig</h3>
+          <p class="text-primary-600 dark:text-primary-400 mb-2">Senior Principle SRE</p>
+          <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
+            Please add your text
+          </p>
+          <div class="flex justify-center space-x-3">
+            <a href="https://www.linkedin.com/in/hilliary-lipsig-a5935245/" target="" class="text-gray-500 hover:text-blue-600 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="" target="" class="text-gray-500 hover:text-blue-400 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12.006 1c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm.143-8.382c.548-.851 1.8-1.595 2.755-1.538.148.009.287.047.385.168a.613.613 0 0 1 .115.438c-.066.98-.887 1.416-1.579 1.651l-.789.265c.079.262.146.53.25.781.309.746.906 1.303 1.71 1.455.55.104 1.136-.039 1.617-.27.119-.058.24-.123.348-.198a.281.281 0 0 1 .383.045.286.286 0 0 1 .023.387c-.242.301-.559.552-.896.739-.405.224-.85.356-1.301.417a3.045 3.045 0 0 1-2.125-.452c-.628-.409-1.141-.975-1.384-1.68-.077-.223-.142-.452-.174-.683l-.875.301c-.721.25-1.395.506-2.113.757-.312.109-.661.152-.975.027-.354-.142-.556-.489-.552-.867.005-.46.315-.872.672-1.152.274-.216.594-.392.917-.543.133-.062 1.764-.738 2.189-.918z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
+            <img src="src/assets/max.jpg" alt="Max Körbächer" class="w-full h-full object-cover" />
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Max Körbächer</h3>
+          <p class="text-primary-600 dark:text-primary-400 mb-2">Technology Advisor</p>
+          <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
+            Founder and managing director of Liquid Reply, CNCF Ambassador, Linux Foundation Europe Advisory Board Member & Cloud Native Summit Munich organizer.
+          </p>
+          <div class="flex justify-center space-x-3">
+            <a href="https://www.linkedin.com/in/maxkoerbaecher" target="" class="text-gray-500 hover:text-blue-600 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="https://bsky.app/profile/mkoerbi.bsky.social" target="" class="text-gray-500 hover:text-blue-400 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12.006 1c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm.143-8.382c.548-.851 1.8-1.595 2.755-1.538.148.009.287.047.385.168a.613.613 0 0 1 .115.438c-.066.98-.887 1.416-1.579 1.651l-.789.265c.079.262.146.53.25.781.309.746.906 1.303 1.71 1.455.55.104 1.136-.039 1.617-.27.119-.058.24-.123.348-.198a.281.281 0 0 1 .383.045.286.286 0 0 1 .023.387c-.242.301-.559.552-.896.739-.405.224-.85.356-1.301.417a3.045 3.045 0 0 1-2.125-.452c-.628-.409-1.141-.975-1.384-1.68-.077-.223-.142-.452-.174-.683l-.875.301c-.721.25-1.395.506-2.113.757-.312.109-.661.152-.975.027-.354-.142-.556-.489-.552-.867.005-.46.315-.872.672-1.152.274-.216.594-.392.917-.543.133-.062 1.764-.738 2.189-.918z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="text-center">
+          <div class="rounded-full overflow-hidden w-32 h-32 mx-auto mb-4">
+            <img src="src/assets/andi.jpeg" alt="Andreas Grabner" class="w-full h-full object-cover" />
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Andreas "Andi" Grabner</h3>
+          <p class="text-primary-600 dark:text-primary-400 mb-2">Fellow DevRel</p>
+          <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
+            Please add your text
+          </p>
+          <div class="flex justify-center space-x-3">
+            <a href="https://www.linkedin.com/in/grabnerandi" target="" class="text-gray-500 hover:text-blue-600 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="https://bsky.app/profile/grabnerandi.bsky.social" target="" class="text-gray-500 hover:text-blue-400 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12.006 1c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm.143-8.382c.548-.851 1.8-1.595 2.755-1.538.148.009.287.047.385.168a.613.613 0 0 1 .115.438c-.066.98-.887 1.416-1.579 1.651l-.789.265c.079.262.146.53.25.781.309.746.906 1.303 1.71 1.455.55.104 1.136-.039 1.617-.27.119-.058.24-.123.348-.198a.281.281 0 0 1 .383.045.286.286 0 0 1 .023.387c-.242.301-.559.552-.896.739-.405.224-.85.356-1.301.417a3.045 3.045 0 0 1-2.125-.452c-.628-.409-1.141-.975-1.384-1.68-.077-.223-.142-.452-.174-.683l-.875.301c-.721.25-1.395.506-2.113.757-.312.109-.661.152-.975.027-.354-.142-.556-.489-.552-.867.005-.46.315-.872.672-1.152.274-.216.594-.392.917-.543.133-.062 1.764-.738 2.189-.918z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="py-16 bg-white dark:bg-gray-800">
+      <div class="container-custom">
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+          <div>
+            <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+              Our Story
+            </span>
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Once upon a time</h2>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              The idea for the book was born by Max some years ago when he was working with a large enterprise customer. He realized that many organizations were struggling to adapt to the rapidly changing technology landscape and needed a comprehensive guide to help them navigate the complexities of platform engineering.
+            </p>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              However, platform engineering just started to become a buzzword at that time and many elements were missing. Early 2024 the time was right to write, but it was clear that this mission requires more expertise and different perspectives.
+            </p>
+            <p class="text-gray-600 dark:text-gray-300">
+              Knowing Andi from previous events and conferences, he seemed to be the right fit to join the project. And how he was the right fit, as he introduces Hilliary, the missing expert to complete the puzzle. At KubeCon + CloudNativeCon Europe the three of us set down to discuss the book and the vision behind it. 
+            </p>
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-xl">
+            <img src="src/assets/book_signing.jpg" alt="Sassify Team" class="w-full h-auto" />
+          </div>
+        </div>
+        
+        <div class="mb-24">
+          <div class="text-center mb-12">
+            <span class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+              Our Mission
+            </span>
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">What we wanted to achieve</h2>
+            <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              We wanted to create a book that not only provides practical guidance but also inspires readers to think differently about platform engineering. </p>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Experience Proofed</h3>
+              <p class="text-gray-600 dark:text-gray-300">
+              The book is based on our own experiences, the experiences of our teams and many others. We have seen what works and what doesn't, and we want to share that knowledge with you.
+              </p>
+            </div>
+            
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Actionable</h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                We wanted to create a book that not only provides practical guidance but also inspires readers to think differently about platform engineering. We believe that the best way to learn is by doing, and we hope that our book will empower readers to take action and make a difference in their organizations.
+              </p>
+            </div>
+            
+            <div class="card p-6 border border-gray-200 dark:border-gray-700">
+              <div class="rounded-full bg-primary-100 dark:bg-primary-900 p-3 w-12 h-12 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">For People</h3>
+              <p class="text-gray-600 dark:text-gray-300">
+              The book should be able to reach anyone who is interested in the topic. Not only for platform engineers but anyone who would work on or with an cloud native platform should find some help in the pages.             
+            </p>
+            </div>
+          </div>
+          <br>
+          <div class="text-center mb-12">
+          <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            In the end, our book should be timeless. Focusing not purely on the technical implementation but more on the path of doing so. </p>
+          </div>
+          </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

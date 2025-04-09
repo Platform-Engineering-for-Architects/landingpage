@@ -1,0 +1,200 @@
+<section class="relative pt-32 pb-20 md:pt-40 overflow-hidden hero-section">
+  <div class="container-custom relative z-10">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="slide-up" transition:animate="slide">
+        <h1 class="mb-6 text-secondary-900 dark:text-white leading-tight">
+          <span class="text-primary-600 dark:text-primary-400">Platform Engineering</span> for Architects<br>
+        </h1>
+        <p class="text-xl text-secondary-600 dark:text-secondary-300 mb-8 max-w-lg">
+          Crafting modern platforms as a product
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="/contact" class="btn-primary">
+            Contact us
+          </a>
+          <a href="/about" class="btn-outline flex items-center">
+            Authors
+          </a>
+          <a href="https://a.co/d/9oS2aOD" target="_blank" class="btn-outline flex items-center">
+            Get your Copy
+          </a>
+        </div>
+      </div>
+      
+      <div class="relative fade-in" transition:animate="fade">
+        <!-- Animated SVG Hero Image -->
+        <div class="w-full max-w-lg mx-auto">
+          <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto drop-shadow-xl">
+            <!-- Background elements with animations -->
+            <circle cx="400" cy="300" r="250" fill="#f0f9ff" class="dark:fill-slate-800 animate-pulse" style="animation-duration: 8s;" />
+            <circle cx="550" cy="180" r="60" fill="#bae6fd" class="dark:fill-teal-800 animate-pulse" opacity="0.6" style="animation-duration: 5s;" />
+            <circle cx="200" cy="400" r="80" fill="#e0f2fe" class="dark:fill-slate-700 animate-pulse" opacity="0.7" style="animation-duration: 6s;" />
+            
+            <!-- Decorative elements with animations -->
+            <circle cx="400" cy="300" r="220" stroke="#0ea5e9" stroke-width="5" fill="none" class="dark:stroke-teal-500" stroke-dasharray="15,10">
+              <animateTransform 
+                attributeName="transform" 
+                type="rotate" 
+                from="0 400 300" 
+                to="360 400 300" 
+                dur="30s" 
+                repeatCount="indefinite" 
+              />
+            </circle>
+
+            <!-- Elephant body with subtle animation -->
+            <ellipse cx="400" cy="340" rx="180" ry="140" fill="#64748b" class="dark:fill-slate-600">
+              <animate 
+                attributeName="ry" 
+                values="140;143;140" 
+                dur="4s" 
+                repeatCount="indefinite" 
+              />
+            </ellipse>
+            
+            <!-- Animated text -->
+            <text x="110" y="90" font-family="Arial" font-size="24" fill="#0ea5e9" class="dark:fill-teal-400" font-weight="bold">
+              Platform Engineering
+              <animate 
+                attributeName="opacity" 
+                values="0.7;1;0.7" 
+                dur="3s" 
+                repeatCount="indefinite" 
+              />
+            </text>
+            <text x="250" y="550" font-family="Arial" font-size="24" fill="#0ea5e9" class="dark:fill-teal-400" font-weight="bold">
+              Product Mindset
+              <animate 
+                attributeName="opacity" 
+                values="0.7;1;0.7" 
+                dur="3s" 
+                repeatCount="indefinite" 
+              />
+            </text>
+            <text x="550" y="150" font-family="Arial" font-size="24" fill="#0ea5e9" class="dark:fill-teal-400" font-weight="bold">
+              Technical Depts
+              <animate 
+                attributeName="opacity" 
+                values="0.7;1;0.7" 
+                dur="3s" 
+                repeatCount="indefinite" 
+              />
+            </text>
+            
+            <!-- Floating particles -->
+            <circle cx="300" cy="200" r="5" fill="#0ea5e9" class="dark:fill-teal-400" opacity="0.7">
+              <animate 
+                attributeName="cy" 
+                values="200;180;200" 
+                dur="4s" 
+                repeatCount="indefinite" 
+              />
+              <animate 
+                attributeName="opacity" 
+                values="0.7;0.3;0.7" 
+                dur="4s" 
+                repeatCount="indefinite" 
+              />
+            </circle>
+            <circle cx="500" cy="250" r="4" fill="#0ea5e9" class="dark:fill-teal-400" opacity="0.5">
+              <animate 
+                attributeName="cy" 
+                values="250;230;250" 
+                dur="5s" 
+                repeatCount="indefinite" 
+              />
+              <animate 
+                attributeName="opacity" 
+                values="0.5;0.2;0.5" 
+                dur="5s" 
+                repeatCount="indefinite" 
+              />
+            </circle>
+            <circle cx="450" cy="400" r="6" fill="#0ea5e9" class="dark:fill-teal-400" opacity="0.6">
+              <animate 
+                attributeName="cy" 
+                values="400;380;400" 
+                dur="6s" 
+                repeatCount="indefinite" 
+              />
+              <animate 
+                attributeName="opacity" 
+                values="0.6;0.3;0.6" 
+                dur="6s" 
+                repeatCount="indefinite" 
+              />
+            </circle>
+            
+            <!-- Add the image inside the SVG with floating animation -->
+            <image href="src/assets/pe4a.jpg" x="275" y="150" width="250" height="300" preserveAspectRatio="xMidYMid meet">
+              <animate 
+                attributeName="y" 
+                values="150;140;150" 
+                dur="5s" 
+                repeatCount="indefinite" 
+              />
+              <!-- Optional subtle rotation animation -->
+              <animateTransform 
+                attributeName="transform" 
+                type="rotate" 
+                values="-2 400 300; 2 400 300; -2 400 300" 
+                dur="7s" 
+                repeatCount="indefinite" 
+              />
+            </image>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Teal section at the bottom with Trusted By -->
+  <div class="mt-10 w-full overflow-hidden -z-10" transition:animate="slide">
+    <div class="relative bg-teal-400 dark:bg-teal-500 py-12 md:py-16">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <div class="text-3xl md:text-4xl font-bold text-black dark:text-black">
+              Your <span class="bg-accent-400 px-2 py-1">timeless</span> guide to craft a everlasting cloud native platform.
+            </div>
+          </div>
+          
+          <div class="flex flex-col items-start md:items-end justify-center">
+            <p class="text-sm uppercase tracking-wider text-teal-800 dark:text-teal-800 font-medium mb-4">WRITTEN FOR</p>
+            <div class="flex flex-wrap justify-start md:justify-end gap-x-8 gap-y-4">
+              <div class="h-8 flex items-center">
+                <span class="text-black dark:text-black font-medium">Solution/Platform Architects</span>
+              </div>
+              <div class="h-8 flex items-center">
+                <span class="text-black dark:text-black font-medium">Platform Engineers</span>
+              </div>
+              <div class="h-8 flex items-center">
+                <span class="text-black dark:text-black font-medium">IT Manager</span>
+              </div>
+              <div class="h-8 flex items-center">
+                <span class="text-black dark:text-black font-medium">Platform Owner</span>
+              </div>
+              <div class="h-8 flex items-center">
+                <span class="text-black dark:text-black font-medium">Platform New Joiners</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Add keyframes for additional animations if needed */
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  /* Apply floating animation to the entire SVG container */
+  .fade-in svg {
+    animation: float 6s ease-in-out infinite;
+  }
+</style>
